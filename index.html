@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>베트남어 연습장 2</title>
+<meta name="description" content="베트남어 문형(có…không, hay, chứ)과 단어를 복습하는 연습장">
+<meta name="theme-color" content="#f5f4f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#17151a" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="베트남어 연습장">
+<meta property="og:title" content="베트남어 연습장 2">
+<meta property="og:description" content="có … không, hay, rất·lắm·quá, chứ 문형과 단어 복습">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&family=Gaegu:wght@700&display=swap">
+<style>
+:root{--bg:#f5f4f1;--grid:#e0dedb;--ink:#21202b;--mute:#615f70;--card:#fff;--line:#cbc8d2;--hl:#f8cddc;--yl:#fff0a3;--red:#c4312f;--ok:#1f7a49;--okbg:#dff3e7;--badbg:#fde3e1;--main:#a82a58;--mainfg:#fff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17151a;--grid:#262329;--ink:#f0ebf2;--mute:#aaa5b6;--card:#201d25;--line:#3c3844;--hl:#6e2b48;--yl:#5b4f12;--red:#ff8079;--ok:#6fdc9e;--okbg:#17352a;--badbg:#412220;--main:#f19ac0;--mainfg:#1a1018;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17151a;--grid:#262329;--ink:#f0ebf2;--mute:#aaa5b6;--card:#201d25;--line:#3c3844;--hl:#6e2b48;--yl:#5b4f12;--red:#ff8079;--ok:#6fdc9e;--okbg:#17352a;--badbg:#412220;--main:#f19ac0;--mainfg:#1a1018;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--bg)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:28px 28px;color:var(--ink);font:16px/1.6 "Be Vietnam Pro","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+main{max-width:640px;margin:0 auto;padding:28px 16px 48px}
+h1{font:700 clamp(2.2rem,8vw,3rem)/1.1 "Gaegu","Noto Sans KR",sans-serif;margin:0 0 6px}
+h1 span{background:linear-gradient(transparent 55%,var(--hl) 55%);padding:0 4px}
+.lead{color:var(--mute);margin:0 0 20px;font-size:.92rem}
+nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:12px}
+nav button{flex:none;min-height:44px;padding:0 14px;border:1.5px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);font:inherit;font-size:.92rem;cursor:pointer}
+nav button[aria-selected="true"]{background:var(--yl);border-color:var(--ink);font-weight:600}
+#bar{display:flex;align-items:center;gap:8px;margin-bottom:12px;font-size:.9rem;color:var(--mute)}
+select{min-height:40px;padding:0 10px;border:1.5px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);font:inherit}
+#stage{background:var(--card);border:1.5px solid var(--ink);border-radius:8px;padding:20px 18px 22px;min-height:340px}
+.meta{display:flex;justify-content:space-between;color:var(--mute);font-size:.88rem}
+.sub{color:var(--mute);margin:14px 0 4px}
+h2{font-size:1.5rem;line-height:1.4;margin:4px 0 18px;font-weight:600}
+.opt,.main,.row button,.chip{font:inherit;cursor:pointer}
+.opt{display:block;width:100%;min-height:50px;margin:0 0 8px;padding:8px 14px;text-align:left;border:1.5px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+.opt:not(:disabled):hover{border-color:var(--ink)}
+.opt.ok{background:var(--okbg);border-color:var(--ok)}
+.opt.bad{background:var(--badbg);border-color:var(--red)}
+.main{min-height:48px;padding:0 22px;border:0;border-radius:6px;background:var(--main);color:var(--mainfg);font-weight:600;margin-top:10px}
+.g{color:var(--ok);font-weight:600;margin:14px 0 2px}
+.r{color:var(--red);font-weight:600;margin:14px 0 2px}
+.exp{margin:0;color:var(--mute);font-size:.92rem}
+.flash{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;width:100%;min-height:200px;margin:16px 0;border:1.5px dashed var(--ink);border-radius:8px;background:var(--bg);color:var(--ink);font:600 1.9rem/1.3 "Be Vietnam Pro","Noto Sans KR",sans-serif;text-align:center;cursor:pointer;padding:16px}
+.flash.back{background:var(--yl)}
+.flash small{font-size:.8rem;font-weight:400;color:var(--mute)}
+.row{display:flex;gap:8px}
+.row button{flex:1;min-height:46px;border:1.5px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+.ans,.pool{display:flex;flex-wrap:wrap;gap:8px;min-height:54px;padding:8px;border-radius:6px}
+.ans{border-bottom:2px solid var(--ink);margin-bottom:12px;background:var(--bg)}
+.chip{min-height:42px;padding:0 12px;border:1.5px solid var(--ink);border-radius:6px;background:var(--card);color:var(--ink)}
+.wl{list-style:none;padding:0;margin:14px 0}
+.wl li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.wl b{text-align:right;color:var(--red)}
+button:focus-visible,select:focus-visible{outline:3px solid var(--main);outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){.opt,.chip,.flash{transition:background .15s,border-color .15s}}
+</style>
+</head>
+<body>
+<main>
+<h1><span>베트남어 연습장 2</span></h1>
+<p class="lead">có … không, hay, rất·lắm·quá, chứ 문형과 8월~9월 단어를 복습해요.</p>
+<nav id="tabs" role="tablist" aria-label="연습 유형"></nav>
+<div id="bar"><label for="cat">단어 범위</label><select id="cat"></select></div>
+<section id="stage" aria-live="polite"></section>
+</main>
+<script>
+const W=[["bệnh viện","병원","명사"],["đại học","대학","명사"],["phim","영화","명사"],["điện thoại","휴대폰","명사"],["rau mùi","고수 (냄새 나는 채소)","명사"],["rau thơm","고수 (향기 나는 채소)","명사"],["mèo","고양이","명사"],["chó","강아지","명사"],["mùa hè","여름","명사"],["cuối tuần","주말","명사"],["tối","저녁","명사"],["đá","얼음, 아이스","명사"],
+["khó","어렵다","형용사"],["dễ","쉽다","형용사"],["thú vị","재미있다","형용사"],["nóng","덥다, 뜨겁다","형용사"],["mát","시원하다","형용사"],["đẹp","예쁘다","형용사"],["xinh","예쁘다","형용사"],["đắt","비싸다","형용사"],["rẻ","싸다","형용사"],["thân thiện","친절하다","형용사"],["mới","새롭다","형용사"],["to","크다 (눈에 보이게)","형용사"],["lớn","크다 (추상적으로)","형용사"],
+["dạy","가르치다","동사"],["chụp ảnh","사진을 찍다","동사"],["ăn tối","저녁을 먹다","동사"],["đi chơi","놀러 가다","동사"],["đi công tác","출장 가다","동사"],["đi du lịch","여행 가다","동사"],["giảm giá","깎다, 할인하다","동사"],["muốn","~하고 싶다","동사"],["cho","주다","동사"],
+["ấy","그","표현"],["hay","아니면 (선택 의문)","표현"],["thế nào","어때요?","표현"],["thêm","더, 추가","표현"],["thường","보통, 자주","표현"],["rất","매우","표현"],["lắm","매우 (문장 끝)","표현"],["quá","너무","표현"]];
+const F=[["Anh Kiên ___ gặp bạn ở trường học không?","có",["là","rất","chứ"],"끼엔 씨는 학교에서 친구를 만나요?","có + 동사·형용사 + không?은 ‘~해요?’ 의문문이에요."],
+["Tiếng Việt ___ khó.","không",["có","chứ","quá"],"베트남어는 어렵지 않아요.","부정은 không + 동사·형용사예요."],
+["Tiếng Việt ___ khó.","rất",["hay","chứ","cho"],"베트남어는 매우 어려워요.","rất + 형용사가 가장 일반적인 ‘매우’예요."],
+["Bạn tôi xinh ___.","lắm",["rất","hay","chứ"],"내 친구는 정말 예뻐요. (감탄하며 설명)","형용사 + lắm은 내가 경험한 것을 감탄하며 설명할 때 써요."],
+["Người Việt Nam thân thiện ___!","quá",["rất","hay","chứ"],"베트남 사람들은 너무 친절해요! (반사적 감탄)","형용사 + quá는 반사적인 반응이에요."],
+["Điện thoại này đắt ___ rẻ?","hay",["có","chứ","và"],"이 휴대폰은 비싸요, 아니면 싸요?","hay는 ‘아니면’이고 둘 중 하나를 묻는 의문문에 써요."],
+["Em thích mèo ___ chó?","hay",["có","chứ","lắm"],"고양이를 좋아해요, 아니면 강아지를 좋아해요?","hay 의문문에는 có나 không이 아니라 고른 것을 답해요."],
+["Em ăn tối ở nhà hay ___ công ty?","ở",["là","có","cho"],"저녁을 집에서 먹어요, 아니면 회사에서 먹어요?","ở는 ‘~에서, ~에 있다’예요."],
+["Em thích học tiếng Việt ___?","chứ",["hay","quá","đâu"],"베트남어 공부 좋아하죠? (긍정 답변 유도)","~ chứ?는 당연한 것을 확인하거나 동의를 기대할 때 써요."],
+["Em biết cô Thảo ___?","chứ",["hay","lắm","rất"],"타오 선생님 아시죠?","chứ?로 ‘알고 있죠?’ 하고 긍정 대답을 유도해요."],
+["Cô Hương dạy tiếng Việt ở ___?","đâu",["gì","ai","nào"],"흐엉 선생님은 어디에서 베트남어를 가르치세요?","đâu는 ‘어디’예요."],
+["Cho tôi ___ rau mùi.","thêm",["rất","hay","mới"],"고수를 더 주세요.","thêm은 ‘더, 추가로’예요."],
+["Cuối tuần, em ___ ở nhà hay đi chơi?","thường",["mới","rất","chứ"],"주말에 보통 집에 있어요, 아니면 놀러 가요?","thường + 동사·형용사는 ‘보통 ~해요’예요."],
+["Em thích ở nhà hay ___ công ty?","đến",["dạy","cho","rất"],"집에 있는 게 좋아요, 회사에 가는 게 좋아요?","đến은 ‘~에 오다, 가다’예요."],
+["Chị Lee có làm việc ở bệnh viện Bạch Mai ___?","không",["chứ","hay","lắm"],"리 씨는 박마이 병원에서 일해요?","có … không 의문문은 끝에 không이 와요."]];
+const S=[["Liên có ăn cơm ở nhà không?","리엔은 집에서 밥을 먹어요?","Liên / ăn cơm / nhà"],["Chị Lee có làm việc ở bệnh viện Bạch Mai không?","리 씨는 박마이 병원에서 일해요?","Chị Lee / làm việc / bệnh viện Bạch Mai"],["Anh Kiên có gặp bạn ở trường học không?","끼엔 씨는 학교에서 친구를 만나요?","Anh Kiên / gặp bạn / trường học"],["Anna có gọi điện thoại ở bưu điện không?","안나는 우체국에서 전화를 해요?","Anna / gọi điện thoại / bưu điện"],["Thầy Hùng có ở ngân hàng không?","훙 선생님은 은행에 계세요?","Thầy Hùng / ở / ngân hàng"],
+["Cô Hương dạy tiếng Việt ở đâu?","흐엉 선생님은 어디에서 베트남어를 가르치세요?"],["Cô ấy dạy tiếng Việt ở trường đại học Hà Nội.","그분은 하노이대학교에서 베트남어를 가르쳐요."],["Tiếng Việt không khó.","베트남어는 어렵지 않아요."],["Anh uống cà phê đá hay cà phê nóng?","아이스커피를 마셔요, 뜨거운 커피를 마셔요?"],["Em thích mèo hay chó?","고양이를 좋아해요, 강아지를 좋아해요?"],["Điện thoại này đắt hay rẻ?","이 휴대폰은 비싸요, 싸요?"],["Cuối tuần, em thường ở nhà hay đi chơi?","주말에 보통 집에 있어요, 놀러 가요?"],["Anh muốn đi du lịch Đà Nẵng hay Nha Trang?","다낭으로 여행 가고 싶어요, 나짱으로 가고 싶어요?"],["Em biết cô Thảo chứ?","타오 선생님 아시죠?"],["Cho tôi thêm rau mùi.","고수를 더 주세요."],["Người Việt Nam thân thiện quá.","베트남 사람들은 너무 친절해요."],["Bạn tôi xinh lắm.","내 친구는 정말 예뻐요."],["Tôi có nhà mới.","저는 새 집이 있어요."]];
+const A=[["Anh ăn cơm hay phở ạ?","Tôi ăn phở.",["Có.","Không.","Phải."],"hay 의문문은 둘 중 하나를 골라 답해요."],
+["Em thích mèo hay chó?","Em thích chó.",["Có.","Không.","Chứ."],"hay 의문문에 có나 không으로 답하지 않아요."],
+["Điện thoại này đắt hay rẻ?","Điện thoại này đắt.",["Có.","Phải.","Không phải."],"고른 쪽을 문장으로 답해요."],
+["Cuối tuần, em thường ở nhà hay đi chơi?","Em thường đi chơi.",["Có.","Không.","Phải."],"선택 의문문에는 선택한 내용을 답해요."],
+["Chúng ta gặp ở quán cà phê hay công ty?","Chúng ta gặp ở quán cà phê.",["Có.","Không.","Chúng ta là quán cà phê."],"장소를 골라서 답해요."],
+["Tiếng Việt có khó không?","Có. Tiếng Việt khó.",["Phải. Tiếng Việt khó.","Có. Tiếng Việt không khó.","Không. Tiếng Việt khó."],"có … không? 의문문에는 Có. + 긍정문으로 답해요."],
+["Tiếng Việt có khó không?","Không. Tiếng Việt không khó.",["Không phải. Tiếng Việt không khó.","Không. Tiếng Việt khó.","Có. Tiếng Việt không khó."],"부정 대답은 Không. + 부정문이에요."],
+["Chị Lee có làm việc ở bệnh viện không?","Không. Chị Lee không làm việc ở bệnh viện.",["Không phải. Chị Lee không làm việc ở bệnh viện.","Không. Chị Lee làm việc ở bệnh viện.","Có. Chị Lee không làm việc ở bệnh viện."],"일반 동사 문장에서는 Không phải가 아니라 Không이에요."],
+["Anh có phải là người Hàn Quốc không?","Phải. Tôi là người Hàn Quốc.",["Có. Tôi là người Hàn Quốc.","Phải. Tôi không là người Hàn Quốc.","Không. Tôi là người Hàn Quốc."],"là 문장은 có phải … không?이고 Phải 또는 Không phải로 답해요."],
+["Em thích học tiếng Việt chứ?","Vâng, em thích học tiếng Việt.",["Không, em thích học tiếng Việt.","Em thích mèo.","Có, em không thích học."],"chứ? 의문문은 긍정 대답이 자연스러워요."]];
+const MODES=[["card","단어 카드"],["vocab","단어 퀴즈"],["fill","빈칸 채우기"],["ans","대답 고르기"],["trans","번역 고르기"],["order","문장 배열"],["make","질문 만들기"]];
+const $=s=>document.querySelector(s),sh=a=>[...a].sort(()=>Math.random()-.5),st=$("#stage");
+let mode="card",cat="전체",Q=[],i=0,sc=0,wr=[],fi=0,fl=false,deck=[];
+const pool=()=>W.filter(w=>cat=="전체"||w[2]==cat);
+$("#tabs").innerHTML=MODES.map(m=>`<button role="tab" data-m="${m[0]}">${m[1]}</button>`).join("");
+$("#cat").innerHTML=["전체","명사","형용사","동사","표현"].map(c=>`<option>${c}</option>`).join("");
+$("#cat").onchange=e=>{cat=e.target.value;start()};
+document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{mode=b.dataset.m;start()});
+function start(){
+ document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.m==mode));
+ $("#bar").style.display=(mode=="card"||mode=="vocab")?"flex":"none";
+ if(mode=="card"){deck=sh(pool());fi=0;fl=false;return card()}
+ Q=build();i=0;sc=0;wr=[];show();
+}
+function build(){
+ if(mode=="vocab"){const P=pool();return sh(P).slice(0,10).map(w=>{const d=Math.random()<.5,x=sh(P.filter(y=>y!=w)).slice(0,3);return{p:d?w[1]:w[0],vi:!d,ov:d,s:d?"베트남어로 알맞은 것은?":"뜻이 알맞은 것은?",o:sh([w,...x]).map(y=>d?y[0]:y[1]),a:d?w[0]:w[1]}})}
+ if(mode=="fill")return sh(F).slice(0,10).map(f=>({p:f[0].replace("___","＿＿＿"),vi:1,ov:1,s:f[3]+" (빈칸에 알맞은 말은?)",o:sh([f[1],...f[2]]),a:f[1],e:f[4]}));
+ if(mode=="ans")return sh(A).slice(0,8).map(f=>({p:f[0],vi:1,ov:1,s:"알맞은 대답은?",o:sh([f[1],...f[2]]),a:f[1],e:f[3]}));
+ if(mode=="trans")return sh(S).slice(0,8).map(s=>({p:s[1],s:"알맞은 베트남어 문장은?",ov:1,o:sh([s[0],...sh(S.filter(y=>y!=s)).slice(0,3).map(y=>y[0])]),a:s[0]}));
+ if(mode=="make")return sh(S.filter(s=>s[2])).map(s=>({t:"order",vi:1,p:s[2],s:"단어를 배열해 có … không 질문을 만드세요.",a:s[0],tk:s[0].split(" ")}));
+ return sh(S).slice(0,8).map(s=>({t:"order",p:s[1],s:"단어를 눌러 문장을 완성하세요.",a:s[0],tk:s[0].split(" ")}));
+}
+function card(){
+ const w=deck[fi];
+ st.innerHTML=`<div class="meta"><span>${fi+1} / ${deck.length}</span><span>${w[2]}</span></div><button class="flash${fl?" back":""}" id="fc" lang="${fl?"ko":"vi"}">${fl?w[1]:w[0]}<small>${fl?"눌러서 베트남어 보기":"눌러서 뜻 보기"}</small></button><div class="row"><button id="pv">이전</button><button id="nx">다음</button><button id="sf">섞기</button></div>`;
+ $("#fc").onclick=()=>{fl=!fl;card()};
+ $("#pv").onclick=()=>{fi=(fi-1+deck.length)%deck.length;fl=false;card()};
+ $("#nx").onclick=()=>{fi=(fi+1)%deck.length;fl=false;card()};
+ $("#sf").onclick=()=>{deck=sh(deck);fi=0;fl=false;card()};
+}
+function show(){
+ if(i>=Q.length)return done();
+ const q=Q[i];
+ st.innerHTML=`<div class="meta"><span>${i+1} / ${Q.length}</span><span>맞은 개수 ${sc}</span></div><p class="sub">${q.s}</p><h2 ${q.vi?'lang="vi"':""}>${q.p}</h2><div id="area"></div><div id="fb"></div>`;
+ q.t=="order"?ord(q):chs(q);
+}
+function chs(q){
+ $("#area").innerHTML=q.o.map((o,k)=>`<button class="opt" ${q.ov?'lang="vi"':""} data-k="${k}">${o}</button>`).join("");
+ const all=document.querySelectorAll(".opt");
+ all.forEach(b=>b.onclick=()=>{const ok=q.o[b.dataset.k]==q.a;all.forEach(x=>{x.disabled=true;if(q.o[x.dataset.k]==q.a)x.classList.add("ok")});if(!ok)b.classList.add("bad");fin(q,ok)});
+}
+function ord(q){
+ let t=q.tk.map((w,k)=>({w,k})),pk=[];
+ do{t=sh(t)}while(t.length>1&&t.map(x=>x.k).join()==t.map((x,j)=>j).join());
+ const r=()=>{
+  $("#area").innerHTML=`<div class="ans" lang="vi">${pk.map(x=>`<button class="chip" data-r="${x.k}">${x.w}</button>`).join("")}</div><div class="pool" lang="vi">${t.filter(x=>!pk.includes(x)).map(x=>`<button class="chip" data-a="${x.k}">${x.w}</button>`).join("")}</div><button class="main" id="ck">확인</button>`;
+  document.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>{pk.push(t.find(x=>x.k==b.dataset.a));r()});
+  document.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{pk=pk.filter(x=>x.k!=b.dataset.r);r()});
+  $("#ck").onclick=()=>{if(pk.length<t.length){$("#fb").innerHTML='<p class="r">모든 단어를 배열한 뒤에 확인하세요.</p>';return}
+   const ok=pk.map(x=>x.w).join(" ")==q.a;document.querySelectorAll(".chip").forEach(c=>c.disabled=true);$("#ck").remove();fin(q,ok)};
+ };
+ r();
+}
+function fin(q,ok){
+ ok?sc++:wr.push(q);
+ $("#fb").innerHTML=`<p class="${ok?"g":"r"}">${ok?"정답입니다.":"정답은 "+q.a}</p>${q.e?`<p class="exp">${q.e}</p>`:""}<button class="main" id="go">${i+1<Q.length?"다음 문제":"결과 보기"}</button>`;
+ $("#go").onclick=()=>{i++;show()};
+}
+function done(){
+ const n=Q.length;
+ st.innerHTML=`<h2>${sc} / ${n}</h2><p class="sub">${sc==n?"모두 맞았어요.":sc>=n*.7?"잘했어요. 틀린 문제를 확인해 보세요.":"한 번 더 풀면 훨씬 익숙해져요."}</p>${wr.length?`<ul class="wl">${wr.map(q=>`<li><span>${q.p}</span><b lang="vi">${q.a}</b></li>`).join("")}</ul>`:""}<button class="main" id="rs">같은 유형 다시 풀기</button>`;
+ $("#rs").onclick=start;
+}
+start();
+</script>
+<script>
+if("serviceWorker" in navigator){
+  window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
+}
+</script>
+</body>
+</html>

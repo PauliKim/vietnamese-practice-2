@@ -1,0 +1,16 @@
+{
+  "name": "베트남어 연습장 2",
+  "short_name": "베트남어 연습장",
+  "description": "베트남어 문형과 단어 복습",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f4f1",
+  "theme_color": "#a82a58",
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
